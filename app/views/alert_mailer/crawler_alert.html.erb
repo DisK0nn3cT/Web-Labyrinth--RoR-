@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Web Labyrinth Alert, <%= @crawler.ipaddress %></h1>
+    <p>
+      This crawler has hit the labyrinth <%= @crawler.hits %>+ times using the browser: <%= @crawler.useragent %>. 
+      <br/>Last seen: <%= @crawler.lastload %>
+    </p>
+  </body>
+</html>
+

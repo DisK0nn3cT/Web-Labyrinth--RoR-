@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  useragent: MyString
+  ipaddress: MyString
+  rdns: MyString
+  hits: 1
+  firstload: 2011-05-09 15:13:54
+  lastload: 2011-05-09 15:13:54
+  lastalert: 2011-05-09 15:13:54
+
+two:
+  useragent: MyString
+  ipaddress: MyString
+  rdns: MyString
+  hits: 1
+  firstload: 2011-05-09 15:13:54
+  lastload: 2011-05-09 15:13:54
+  lastalert: 2011-05-09 15:13:54

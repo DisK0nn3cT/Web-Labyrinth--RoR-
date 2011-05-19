@@ -1,0 +1,28 @@
+<h1>Listing crawlers</h1>
+
+<table>
+  <tr>
+    <th>Useragent</th>
+    <th>Ipaddress</th>
+    <th>Rdns</th>
+    <th>Hits</th>
+    <th>Firstload</th>
+    <th>Lastload</th>
+    <th>Lastalert</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @crawlers.each do |crawler| %>
+  <tr>
+    <td><%= crawler.useragent %></td>
+    <td><%= crawler.ipaddress %></td>
+    <td><%= crawler.rdns %></td>
+    <td><%= crawler.hits %></td>
+    <td><%= crawler.firstload %></td>
+    <td><%= crawler.lastload %></td>
+    <td><%= crawler.lastalert %></td>
+  </tr>
+<% end %>
+</table>
