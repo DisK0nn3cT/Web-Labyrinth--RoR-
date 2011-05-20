@@ -1,6 +1,6 @@
 class LabyrinthsController < ApplicationController
-  before_filter set_crawler_and_labyrinth
-  before_filter random_errors, :only => [:show]
+  before_filter :set_crawler_and_labyrinth
+  before_filter :random_errors, :only => [:show]
 
   # GET /labyrinths
   def index
