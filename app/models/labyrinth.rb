@@ -1,7 +1,6 @@
 class Labyrinth 
   
   def self.generate
-    doorodds = 10
     labyrinth = MarkovTextGenerator.new
     labyrinth.random(25)
   end
