@@ -5,7 +5,7 @@ class Crawler < ActiveRecord::Base
       crawlers = Crawler.where(:ipaddress => ip, :useragent => useragent)
       crawlers.each do |c|
         c.hits += 1
-	c.lastload = DateTime.current
+        c.lastload = DateTime.current
         c.save
       end
     else
@@ -19,7 +19,7 @@ class Crawler < ActiveRecord::Base
       if (c.hits > 3 && timediff>180)
         AlertMailer.crawler_alert(c).deliver
         c.lastalert = DateTime.current
-	c.save
+        c.save
       end
     end
   end
